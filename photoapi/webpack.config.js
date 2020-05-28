@@ -1,7 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 
-module.exports = {
+module.exports = {  
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -60,23 +60,13 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/
       },
-      {
-        test: /\.(png|jpe?g|gif|webp)(\?.*)?$/,
-        test: /\.(png|jpe?g|gif|webp)(\?.*)?$/,
-        use: [         
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 4096,
-              fallback: {
-                loader: 'file-loader',
-                options: {
-                  name: 'img/[name].[hash:8].[ext]'
-                }
-              }
-            }
-          }
-        ]
+      {        
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+        }      
       },      
     ]
   },
