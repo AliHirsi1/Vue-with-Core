@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "grid.css": "^0.6.1",
+    "html": "^1.0.0",
+    "html-loader": "^1.1.0",
     "normalize.css": "^8.0.1",
+    "plugin": "^0.3.3",
     "vue": "^2.5.11"
   },
   "browserslist": [
@@ -26,12 +29,12 @@
     "babel-preset-stage-3": "^6.24.1",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
-    "file-loader": "^1.1.4",
+    "file-loader": "^1.1.11",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
+    "webpack": "^3.12.0",
     "webpack-dev-server": "^2.9.1"
   }
 }
