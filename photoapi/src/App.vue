@@ -1,15 +1,19 @@
 <template>
   <div id="app">   
-    <nav-bar></nav-bar>   
+    <navbar></navbar>
+    <home></home> 
     
   </div>
 </template>
 
 <script>
-import navbar from './components/navbar'
+import navbar from './components/navbar';
+import home from './components/home';
 export default {
   components:{   
-    'nav-bar': navbar,
+     navbar,
+     home,
+    
   }, 
   data () {
     return {
@@ -25,6 +29,7 @@ export default {
     padding: 0;
     box-sizing: border-box;
   }
+  
   html{
     background-color: #fff;
     color: #555;
@@ -34,6 +39,8 @@ export default {
     text-rendering: optimizeLegibility;
     
   }
+
+  
 
   
 </style>

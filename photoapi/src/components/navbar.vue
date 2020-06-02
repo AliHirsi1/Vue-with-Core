@@ -49,6 +49,7 @@ export default {
     float: right;
     list-style: none;
     margin-top: 70px;
+    margin-left: 55%;
 }
 
 .main-nav li {
